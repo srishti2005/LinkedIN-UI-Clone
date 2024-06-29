@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #f4f2ee;
+    
+}
+.navbar{
+    background-color: #fff;
+    height: 52px;
+    display:flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0rem 4rem ;
+    align-items: center;
+}
+
+.nav-left{
+    display:flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.nav-right{
+    padding-left: 3rem;
+}
+
+.nav-logo i{
+    font-size: 2.5rem;
+    color:#0a66c2 ;
+}
+
+.search-input{
+
+    width: 280px;
+    height:32px;
+    display: flex;
+    padding: 0px 40px;
+    background-color: transparent;
+    border: none;
+
+
+}
+
+
+.nav-search {
+    justify-content: center;
+    display: flex;
+    background-color: #EDF3F8;
+    gap: 0rem;
+    align-items: center;
+    border-radius: 0.2%;
+
+}
+
+.nav-search i{
+    font-size: 1rem;
+}
+
+.nav-home{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000000E6;
+}
+.nav-home i{
+    font-size: 1.2rem;
+}
+
+.nav-network{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00000099;
+}
+.nav-network i{
+    font-size: 1.2rem;
+}
+
+.nav-jobs{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00000099;
+}
+.nav-jobs i{
+    font-size: 1.2rem;
+}
+
+.nav-msg{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00000099;
+}
+.nav-msg i{
+    font-size: 1.2rem;
+}
+
+.nav-notification{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00000099;
+    
+}
+.nav-notification i{
+    font-size: 1.2rem;
+}
+
+.nav-me{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00000099;
+}
+.nav-me i{
+    font-size: 1.2rem;
+}
+
+.nav-me-down{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.nav-forB i{
+    font-size: 1.2rem;
+}
+.nav-forB-down{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #00000099;
+}
+    
+.navbar a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #915907;
+}
+
+.nav-home,
+.nav-msg:hover,
+.nav-notification:hover,
+.nav-network:hover,
+.nav-jobs:hover,
+.nav-me:hover,
+.nav-forB-down:hover{
+    color: black;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    gap: 2rem;
+    width: 85%;
+    margin: 1.8rem 4rem 4rem;
+    color: #f4f2ee ;;
+    /*background: #f4f2ee ;*/
+}
+ .sidebar{
+    display: flex;
+    background: #fff ;
+    width: 99%;
+    height: 55vh;
+    border-radius: 0.8rem;
+    position: relative;
+    text-align: center;
+}
+
+.profilename{
+    top: 33%;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: black;
+    border-bottom: 1px solid rgb(185,185,185);
+    height: 11vh;
+}
+.sidebar .profilename a{
+   color: #000;
+   text-decoration: none;
+   left: auto;
+}
+.profilename small{
+    position: relative;
+    font-size: 0.7rem;
+    
+    color: gray;
+    font-weight: lighter;
+}
+
+.profilename a:hover{
+    text-decoration: underline;
+    
+
+}
+
+.sidebar .top{
+    width: 100%;
+    height: 10vh;
+    background-color: #d4d4d4;
+    position: absolute;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.sidebar img{
+    position: relative;
+    border-radius: 50%;
+    left: 0%;
+    transform: translate(-50);
+    top: 49%;
+    width: 5rem;
+    height: 5rem;
+    border-color: #fff;
+    border-width: 20rem;
+    border: solid;
+    
+}
+
+.sidebar .view{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 55%;
+    border-bottom: 1px solid rgb(185,185,185);
+    height: 10vh;
+    width: 100%;
+   
+}
+
+.sidebar .views:hover{
+    background-color: #d4d4d4;
+    
+}
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    color: #00000099;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 0.8rem;
+    margin: 0.2rem 0;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    
+    
+}
+.sidebar .views a{
+    text-decoration: none;
+    color: #0a66c2;
+}
+.sidebar .premium{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    position: absolute;
+    top: 75%;
+    border-bottom: 1px solid rgb(185,185,185);
+    height: 8vh;
+    width: 100%;
+    
+}
+.sidebar .try a h5{
+    position: absolute;
+    top: 82%;
+    display: flex;
+    justify-content: center;
+    font-size:0.7rem;
+    right: 48%;
+    color: black;
+    width: 123px;
+    gap: 0.2rem;
+}
+.sidebar .try a h5 i{
+    margin-top: 0.2rem;
+    color: #bf8939;
+}
+.sidebar .premium h6{
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 100;
+    color: gray;
+    right: 35%;
+}
+.sidebar .items{
+    position: absolute;
+    display: flex;
+    justify-content:left;
+    top: 93%;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 100;
+    gap: 0.2rem;
+    
+}
+.sidebar .items h6{
+    margin: 0 0.2rem;
+}
+.sidebar .items i{
+    margin: 0 0.4rem;
+}
+
+.recents{
+    display: flex;
+    background: #fff ;
+    width: 99%;
+    height: 80vh;
+    border-radius: 0.8rem;
+    position: relative;
+    margin-top: 0.8rem;
+}
+
+.recent p{
+    color: gray;
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+aside .recents .recent .one{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.recents .recent .one h6{
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    font-weight: lighter;
+}
+.recent .one h6 i{
+    color: rgb(77, 74, 74);
+    margin-right: 0.4rem;
+}
+.groups{
+    display: flex;
+    background: #fff ;
+    width: 99%;
+    /*height: 80vh;*/
+    border-radius: 0.8rem;
+    position: absolute;
+    margin-top: 0.8rem;
+    top: 28%;
+    color: gray;
+}
+.groups p{
+    color:  #0a66c2;
+    font-weight: 100;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+aside .groups .group .two{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.groups .group .two h6{
+    font-size: 0.8rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    font-weight: lighter;
+}
+.group .two h6 i{
+    color: rgb(77, 74, 74);
+    margin-right: 0.4rem;
+}
+aside .groups .group .two:hover{
+    background-color:#d4d4d4 ;
+    cursor: pointer;
+}
+aside .groups .group .two h6:hover{
+    color:rgb(77, 74, 74); 
+}
+aside .recents .recent .groups .group .two p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+aside .recents .recent .one h6:hover{
+    color:rgb(77, 74, 74); 
+}
+aside .recents .recent .one p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+aside .recents .recent .one:hover{
+    background-color:#d4d4d4 ;
+    cursor: pointer;
+    color:rgb(77, 74, 74); 
+}
+.show p{
+    color: gray;
+    margin-top: 0.8rem;
+    margin-left: 2.2rem;
+}
+aside .recents .groups .group .show :hover{
+    background-color:#d4d4d4 ;
+    cursor: pointer;
+    color:rgb(77, 74, 74); 
+}
+aside .events{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 110%;
+}
+aside .events i{
+    margin: 1.05rem ;
+    margin-left: 9.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    font-size: larger;
+}
+.events i:hover{
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    border: 5rem;
+
+}
+.tags{
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    top: 122%;
+    border-bottom: 1px solid rgb(185,185,185);
+    height: 10vh;
+    width: 100%;
+}
+.tags p{
+    font-size: 0.9rem;
+}
+.tags p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.discover{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 150%;
+    margin-top: 0.8rem ;
+    left: 13%;
+}
+.discover p{
+    font-size: 1.2rem;
+    color: gray;
+}
+aside .recents .recent.groups .discover p:hover{
+    background-color: #d4d4d4;
+}
+/*================ rifht side starts =================*/
+.right-top{
+    display: flex;
+    background: #fff ;
+    width: 120%;
+    height: 55vh;
+    margin-right: 0.2rem;
+    border-radius: 0.8rem;
+    position: relative;
+}
+.right-top .news{
+    color: gray;
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+}
+.right-top .news .linknews {
+    margin: 0.8rem;
+}
+.right-top .news .linknews p{
+    font-size: 1.4rem;
+    color: rgb(30, 30, 30);
+}
+.right-top .news .three{
+    margin: 0.8rem;
+}
+.right-top .news .three h6{
+    font-size: 0.9rem;
+    font-weight:590;
+    color: rgb(59, 57, 57);
+}
+.right-top .news .stories h5{
+    font-size: 1.2rem;
+    font-weight:100;
+    color: gray;
+    margin-left: 3%;
+}
+.right-top .news .three h7{
+    font-size: 0.8rem;
+    font-weight:100;
+    color: rgb(167, 165, 165);
+}
+.right-top .news .newsshow{
+    margin: 4%;
+}
+.right-top .news .three:hover {
+    background-color:  #d4d4d4;
+    cursor: pointer;
+}
+.right-top .news .newsshow:hover {
+    background-color:  #d4d4d4;
+    cursor: pointer;
+}
+.right-bottom{
+    display: flex;
+    background: #fff ;
+    width: 120%;
+    height: 45vh;
+    margin-right: 0.2rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+}
+.right-bottom .adds h6{
+    display:flex;
+    margin-left: 16rem;
+    margin-top: 0.2rem;
+    color: #000;
+    gap:0.2rem;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+.right-bottom .adds h6 i{
+    margin-top: 0.2rem;
+}
+.right-bottom .potential {
+    position: relative;
+    color: gray;
+    right:109%;
+    margin: 2rem;
+}
+.right-bottom .potential p{
+   font-size: 0.8rem;
+   display: flex;
+   text-align: center;
+   width: 300px;
+   margin: 0.4rem;
+}
+.right-bottom .potential img{
+    height: 5rem;
+    width: 5rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+}
+.right-bottom .potential i{
+    position: relative;
+    margin-left: 4rem;
+    bottom: 6%;
+    font-size: 4rem;
+    color: #0a66c2;
+}
+.right-bottom .potential p{
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+}
+.right-bottom .potential button{
+    margin-top: 1rem;
+    margin-left: 7rem;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 3rem;
+    background-color: #fff;
+    color:#0a66c2;
+    border-color: #0a66c2;
+}
+/*=============== main section starts =============*/
+.main-top{
+    display: flex;
+    background: #fff ;
+    width: 98%;
+    height: 23vh;
+    border-radius: 0.8rem;
+    
+}
+.main-top .photo img{
+    border-radius: 50%;
+    margin: 1rem;
+    height: 4.2rem;
+    width: 4.2rem;
+}
+.main-top .post{
+    margin: 1rem;
+}
+.main-top .post .post-search{
+    width: 37rem;
+    border-radius: 2rem;
+    margin-top: 0.3rem;
+    height: 4.2rem;
+    font-size: 1rem;
+    border-color: gray;
+}
+.main-top .post .post-search:hover{
+     background-color: #d4d4d4 ;
+     cursor: pointer;
+}
+.main-top .icons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70%;
+    right: 70%;
+    gap: 6rem ;
+    width: 20rem;
+}
+.main-top .icons .media{
+    font-size: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    height: 40px;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+}
+.main-top .icons .media i{
+    color: #0a66c2;
+}
+.main-top .icons .media h6{
+    font-weight: 100;
+    color:  rgb(77, 74, 74);
+}
+.main-top .icons .event{
+    font-size: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    height: 40px;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+}
+.main-top .icons .event h6{
+    font-weight: 100;
+    color:  rgb(77, 74, 74);
+}
+.main-top .icons .event i{
+    color: #bf8939;
+}
+.main-top .icons .article{
+    font-size: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    margin: 0.2rem;
+    height: 40px;
+    font-size: 1.5rem;
+}
+.main-top .icons .article h6{
+    font-size: 1rem;
+    font-weight: 100;
+    color:  rgb(77, 74, 74);
+}
+.main-top .icons .article i{
+    color: rgb(255, 128, 0);
+}
+.main-top .icons .media:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
+.main-top .icons .article:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
+.main-top .icons .event:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
+.main-bottom{
+    display: flex;
+    background: #fff ;
+    width: 98%;
+    height: 100vh;
+    border-radius: 0.8rem;
+    margin-top: 0.9rem;
+    border-top: 1px solid gray;
+}
+.main-bottom .logo{
+    display: flex;
+    justify-content: center;
+    
+    right: 20%;
+}
+.main-bottom .logo a h7{
+    color: #000;
+    font-size: 1rem;
+    margin:1rem;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
+.main-bottom .logo a h7{
+    width: 180px
+    
+}
+.main-bottom .followers {
+    color: gray;
+    width:290px;
+    font-size: 0.6rem;
+    margin-top: 3rem;
+    right: 45rem;
+    position: absolute;
+}
+.main-bottom .logo img{
+   width: 4rem;
+   height: 4rem;
+   margin: 1rem;
+   right: 15%;
+}
+.main-bottom .caption{
+    display: flex;
+    justify-content: center;
+    color: #000;
+    margin-top: 5.5rem;
+    position: absolute;
+    right: 37%;
+}
+.main-bottom .caption p{
+    display: flex;
+    font-size: 0.8rem;
+    position: relative;;
+    width: 570px;
+    text-align: left;
+    height: 100px;
+    font-weight: 100;
+    color: rgb(107, 105, 105);
+}
+.main-bottom .box {
+    width:90%;
+    position: relative;
+   
+    margin-top: 12rem;
+    right: 40%;
+}
+.main-bottom .box img{
+    width: 710px;
+    height: 440px;
+}
+.main-bottom .icons2{
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    top: 93%;
+    right: 125%;
+    gap: 6rem;
+    color: gray;
+}
+.main-bottom .icons2{
+   position: relative;
+    display: flex;
+    margin: 0.2rem;
+}
+.main-bottom .icons2 h6{
+    gap: 1rem;
+    display: flex;
+    font-size: 1rem;
+}
+.main-bottom .icons2 i{
+   margin-top: 0.2rem;
+}
+.main-bottom .icons2 .like{
+    height: 28px;
+    width: 65px;
+}
+.main-bottom .icons2 .like:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+.main-bottom .icons2 .comment{
+    height: 28px;
+    width: 120px;
+}
+.main-bottom .icons2 .comment:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+.main-bottom .icons2 .share{
+    height: 28px;
+    width: 85px;
+}
+.main-bottom .icons2 .share:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+.main-bottom .icons2 .save{
+    height: 28px;
+    width: 70px;
+}
+.main-bottom .icons2 .save:hover{
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
